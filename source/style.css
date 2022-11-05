@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #044a42;
+  --secondary-color: #062925;
+  --third-color: #b8e1dd;
+  --fourth-color: #f1f2eb;
+}
+body {
+  background-color: var(--fourth-color);
+  font-family: "Orbitron", sans-serif;
+  background-size: cover;
+  background-image: url("/source/images/pixelland.jpg");
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+} /*
+h1 .lin {
+  color: #55c6f7;
+}
+h1 .go {
+  color: #f7d132;
+}
+h1 .es {
+  color: #e54140;
+}*/
+hr {
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+  color: white;
+}
+h6 {
+  color: white;
+  text-align: center;
+}
+.initial {
+  background-color: #dbd0fb;
+  color: var(--secondary-color);
+  height: 400px;
+  border-radius: 50px 0px 0px 50px;
+  padding: 40px;
+  box-shadow: 3px 3px 10px grey;
+}
+.result {
+  background-color: #b1abf3;
+  color: white;
+  height: 400px;
+  border-radius: 0px 50px 50px 0px;
+  padding: 40px;
+  box-shadow: 3px 3px 16px grey;
+}
+.listen,
+.listen2 {
+  font-size: 28px;
+  color: #044a42;
+}
+.container {
+  margin: 80px 80px;
+}
+.search-word,
+.form-select {
+  padding: 15px 30px;
+  width: 100%;
+  border: 1px solid rgb(184, 182, 182);
+  border-radius: 4px;
+  margin: 12px 0px;
+  color: #062925;
+}
+
+.hero {
+  color: #083574;
+}
