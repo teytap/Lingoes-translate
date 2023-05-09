@@ -48,6 +48,11 @@ h6 {
   box-shadow: 3px 3px 16px var(--primary-color);
   opacity: 0.9;
   margin: 50px 60px 60px 0px;
+  flex-wrap: wrap;
+}
+#warning {
+  color: fuchsia;
+  font-size: 11px;
 }
 .listen {
   font-size: 28px;
@@ -76,7 +81,7 @@ h6 {
   color: white;
 }
 .translation {
-  overflow: hidden;
+  flex-wrap: wrap;
 }
 footer {
   text-align: center;

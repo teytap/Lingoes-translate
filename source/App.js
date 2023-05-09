@@ -5,9 +5,14 @@ const languageResult = document.querySelector(".language-result");
 const translationResult = document.querySelector(".translation");
 
 function translate(response) {
-  // languageResult.innerHTML =
-  //   selectLanguage2.options[selectLanguage2.selectedIndex].text;
-  translationResult.innerHTML = response.responseData.translatedText;
+  translationResult.innerHTML = "";
+  document.getElementById("warning").innerHTML = "";
+  if (!response.responseDetails) {
+    translationResult.innerHTML = response.responseData.translatedText;
+  } else {
+    document.getElementById("warning").innerHTML =
+      response.responseData.translatedText;
+  }
 }
 function showTranslate(textInput, twoLanguages) {
   const options = {
@@ -23,7 +28,7 @@ function showTranslate(textInput, twoLanguages) {
     options
   )
     .then((response) => response.json())
-    .then((response) => translate(response))
+    .then((data) => translate(data))
     .catch((err) => console.error(err));
 }
 
