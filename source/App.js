@@ -6,9 +6,14 @@ const translationResult = document.querySelector(".translation");
 
 function translate(response) {
   translationResult.innerHTML = "";
+
   document.getElementById("warning").innerHTML = "";
   if (!response.responseDetails) {
-    translationResult.innerHTML = response.responseData.translatedText;
+    if (response.matches[0].segment === response.matches[0].translation) {
+      document.getElementById("warning").innerHTML = "No matching translation";
+    } else {
+      translationResult.innerHTML = response.responseData.translatedText;
+    }
   } else {
     document.getElementById("warning").innerHTML =
       response.responseData.translatedText;
