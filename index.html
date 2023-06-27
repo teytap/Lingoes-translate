@@ -42,7 +42,7 @@
     <main class="container">
       <div class="row">
         <div class="col initial">
-          search for something to translate
+          Choose languages
 
           <form action="">
             <select
@@ -58,18 +58,6 @@
               <option value="de">German</option>
               <option value="ja">Japanese</option>
             </select>
-
-            <input
-              type="text"
-              placeholder="Type text.."
-              class="search-word"
-              id="newWord"
-            />
-            <button type="submit" id="submit-btn">Submit</button>
-          </form>
-        </div>
-        <div class="col result">
-          <form action="">
             <p>To <i class="fa-solid fa-arrow-right-arrow-left"></i></p>
             <select
               class="form-select"
@@ -85,10 +73,22 @@
               <option value="ja">Japanese</option>
             </select>
           </form>
+        </div>
+        <div class="col result">
+          Search something to translate
+          <form action="">
+            <input
+              type="text"
+              placeholder="Type text.."
+              class="search-word"
+              id="newWord"
+            />
+            <button type="submit" id="submit-btn">Submit</button>
+          </form>
 
-          <a href="#" class="listen2"
+          <!-- <a href="#" class="listen2"
             ><i class="fa-solid fa-volume-high"></i
-          ></a>
+          ></a> -->
           <h2 class="translation mt-4">meaning</h2>
           <p id="warning" class="mt-4"></p>
         </div>

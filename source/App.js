@@ -47,6 +47,7 @@ function handleSubmit(event) {
   showTranslate(textInput, twoLanguages);
 }
 
+submitBtn.addEventListener("submit", handleSubmit);
 submitBtn.addEventListener("click", handleSubmit);
 
 showTranslate("Hello", "en|tr");
